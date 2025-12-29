@@ -17,11 +17,13 @@
     <nav class="nav-links">
       <a href="#" onclick="scrollToEmail(); return false;">Why Job Dorm</a>
       <a href="#" onclick="scrollToEmail(); return false;">How it works</a>
-      <a href="#" onclick="scrollToEmail(); return false;">Join waitlist</a>
+      <!-- Changed onclick to open Google Form in new tab -->
+      <a href="#" onclick="window.open('https://forms.gle/9ZEuTXcBr2wvpWHp7', '_blank'); return false;">Join waitlist</a>
     </nav>
     <div class="nav-actions">
       <a href="#" onclick="scrollToEmail(); return false;" class="btn-secondary">Post a job</a>
-      <a href="#" onclick="scrollToEmail(); return false;" class="btn-primary">Get early access</a>
+      <!-- Changed onclick to open Google Form in new tab -->
+      <a href="#" onclick="window.open('https://forms.gle/9ZEuTXcBr2wvpWHp7', '_blank'); return false;" class="btn-primary">Get early access</a>
     </div>
   </header>
 
@@ -38,7 +40,8 @@
     </h1>
     <p class="hero-subtext">That’s the one.</p>
     <div class="hero-actions">
-      <a href="#" onclick="scrollToEmail(); return false;" class="btn-primary">Get early access →</a>
+      <!-- Changed onclick to open Google Form in new tab -->
+      <a href="#" onclick="window.open('https://forms.gle/9ZEuTXcBr2wvpWHp7', '_blank'); return false;" class="btn-primary">Get early access →</a>
       <a href="#" onclick="scrollToEmail(); return false;" class="btn-secondary">Post a job</a>
     </div>
     <p class="hero-micro">No spam. Just one email when we launch.</p>
@@ -79,11 +82,11 @@
     <div class="who-cards">
       <div class="card">
         <div class="icon blue">👤</div>
-        <h3>For Job Seekers</h3>
+        <h3>For Students</h3>
         <ul>
-          <li>Find part-time jobs nearby</li>
-          <li>Work hours that fit your life</li>
-          <li>Build experience and earn money</li>
+          <li>Jobs that fit class schedules</li>
+          <li>Earn income while studying</li>
+          <li>Open to all disciplines</li>
         </ul>
       </div>
       <div class="card">
@@ -140,10 +143,10 @@
       </div>
       <!-- Form for email collection, flex layout for input and button -->
       <form>
-        <!-- Email input field, required for validation -->
-        <input id="email-input" type="email" placeholder="Enter your email address" required />
-        <!-- “Join waitlist” button, dark style for primary action -->
-        <button type="submit" class="btn-dark" onclick="scrollToEmail();">Join waitlist →</button>
+        <!-- Added onclick to redirect to Google Form when clicked -->
+        <input id="email-input" type="email" placeholder="Enter your email address" required onclick="window.open('https://forms.gle/9ZEuTXcBr2wvpWHp7', '_blank');" />
+        <!-- Changed onclick to open Google Form in new tab -->
+        <button type="submit" class="btn-dark" onclick="window.open('https://forms.gle/9ZEuTXcBr2wvpWHp7', '_blank');">Join waitlist →</button>
       </form>
       <!-- Legal / consent text, small and muted for disclaimer -->
       <p class="disclaimer">By joining, you agree to our Terms and Privacy Policy.</p>
@@ -159,10 +162,14 @@
         </div>
       </div>
       <div class="footer-center">
-        <a href="#" onclick="scrollToEmail(); return false;">About</a>
-        <a href="#" onclick="scrollToEmail(); return false;">Contact</a>
-        <a href="#" onclick="scrollToEmail(); return false;">Privacy</a>
-        <a href="#" onclick="scrollToEmail(); return false;">Terms</a>
+        <!-- Changed href to Google Form and added target="_blank" -->
+        <a href="https://forms.gle/9ZEuTXcBr2wvpWHp7" target="_blank">About</a>
+        <!-- Changed href to Google Form and added target="_blank" -->
+        <a href="https://forms.gle/9ZEuTXcBr2wvpWHp7" target="_blank">Contact</a>
+        <!-- Changed href to Google Form and added target="_blank" -->
+        <a href="https://forms.gle/9ZEuTXcBr2wvpWHp7" target="_blank">Privacy</a>
+        <!-- Changed href to Google Form and added target="_blank" -->
+        <a href="https://forms.gle/9ZEuTXcBr2wvpWHp7" target="_blank">Terms</a>
       </div>
       <div class="footer-right">
         <p>© 2025 Job Dorm</p>
